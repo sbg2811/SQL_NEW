@@ -1,0 +1,9 @@
+/* Namespace is different as below
+Group1 - Trigger
+Group2 - Index
+Group3 - (Package, Procedure, Function, Job, Type, View, Synonym, Sequence, Table)
+
+It means Trigger, Index and any one from 3rd one can share same name
+However from 3rd group eg, Package, Procedure can not share same name, view and table can not share same name*/
+
+select * from user_objects where object_name like '%EMP%';
